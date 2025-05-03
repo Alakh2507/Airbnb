@@ -1,0 +1,106 @@
+body{
+    background-color: rgb(204, 186, 222);
+    font-family: "Plus Jkarta Sans",sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+.fa-airbnb{
+  color: red;
+  font-size:2rem;
+  
+}
+
+.nav-link{
+    color:black !important;
+}
+
+.f-info-links a{
+  text-decoration: none;
+  color:#222222;
+}
+
+
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+
+.f-info-links{
+width: 100%;
+vertical-align: middle;
+}
+.f-info-social{
+width: 100%;
+font-size:1.5rem ;
+vertical-align: middle;
+}
+
+.f-info-social i{
+margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height :8rem;
+  background-color:#ebebeb ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* cards */
+
+.listing-card{
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top{
+  border-radius: 0.4rem !important;
+  width: 100% !important;
+  object-fit: cover;
+  height: 20rem;
+
+}
+
+.card-body{
+  padding: 0 !important;
+}
+
+.card-text{
+  font-weight: 400 !important;
+}
+
+.listinglink{
+  text-decoration: none;
+}
+
+.card-img-overlay{
+  opacity: 0;
+}
+
+.card-img-overlay:hover{
+  opacity:0.2;
+  background-color: rgb(238, 179, 179);
+}
+
+.alert alert-danger {
+  justify-content: center;
+}
+
+ .cardreviews{
+  margin-left:1rem;
+  line-height: 0.3 !important;
+} 
+/* Map */
+#map{
+height: 430px;
+width: 800px;
+border-radius: 1%;
+margin-bottom: 10px;
+}
+

@@ -1,0 +1,66 @@
+<% layout("/layouts/boilerplate.ejs")%>
+<body>
+ <div class="row offset-1">
+    <div class="col-8">
+
+        <h1>Edit this page</h1>
+    <form method="post" action="/listings/<%=listing._id%>?_method=PUT" enctype="multipart/form-data" class="row g-3 needs-validation" novalidate >
+        <!--listings ka abject key title -->
+        
+        <div class="mb-3 mt-1">
+        <label for="title" class="form-label">Title</label>
+        <input required name="listings[title]"  type="text"  value="<%=listing.title%>"  class="form-control">
+        <div class="valid-feedback">
+            good title 
+         </div>
+         <div id="invalidCheck3Feedback" class="invalid-feedback">
+         Please enter title
+         </div>
+        </div>
+
+          <div class="mb-3">
+         <label for="description" class="form-label">Description</label>
+        <textarea required row="20" cols="40" name="listings[description]" type="textarea" class="form-control" ><%=listing.description%></textarea>
+        <div id="invalidCheck3Feedback" class="invalid-feedback">
+            Please enter description
+            </div>
+    </div>
+
+         <div class="mb-3">
+         <label for="image" class="form-label">Upload image</label>
+        <input  name="listings[image]" id="image" type="file"  class="form-control">
+
+    </div>
+      
+         <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+             <input required name="listings[location]" id="location" type="text" value="<%=listing.location%>" class="form-control">
+             <div id="invalidCheck3Feedback" class="invalid-feedback">
+                Please enter location
+                </div>
+            </div>
+
+     <div class="row">
+           <div class="mb-3 col-md-4">
+              <label for="price" class="form-label">Price</label>
+              <input required name="listings[price]" type="number"  value="<%=listing.price%>" class="form-control">
+              <div id="invalidCheck3Feedback" class="invalid-feedback">
+                Please enter price
+                </div>
+            </div>
+
+             <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+              <input required name="listings[country]" type="text" value="<%=listing.country%>"class="form-control" >
+              <div id="invalidCheck3Feedback" class="invalid-feedback">
+                Please enter Country
+                </div>
+            </div> 
+      </div>
+        
+       <button class="btn btn-dark col-3 mt-2  mb-2"> Edit</button>
+
+    </div>
+</div>
+    </form>
+</body>
